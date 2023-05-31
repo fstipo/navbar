@@ -10,7 +10,7 @@ const Navbar = () => {
     return (
         <nav>
             <div className="nav-center">
-                <div className="nav header">
+                <div className="nav-header">
                     <img src={logo} alt="Logo" className="logo" />
                     <button className="nav-toggle" onClick={toggleLinks}><FaBars /></button>
                 </div>
