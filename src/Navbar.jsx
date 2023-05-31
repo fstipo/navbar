@@ -14,14 +14,15 @@ const Navbar = () => {
                     <img src={logo} alt="Logo" className="logo" />
                     <button className="nav-toggle" onClick={toggleLinks}><FaBars /></button>
                 </div>
-                {showLinks && <div className="links-container">
+
+                <div className={showLinks ? "links-container show-container" : "links-container"}>
                     <ul className="links">
                         {links.map(link => {
                             const { id, url, text } = link;
                             return <li key={id}><a href={url}>{text}</a></li>
                         })}
                     </ul>
-                </div>}
+                </div>
 
             </div>
         </nav>
