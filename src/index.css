@@ -321,12 +321,16 @@ nav {
   }
   .links {
     display: flex;
-    gap: 0.7rem;
+    gap: 1rem;
   }
   .links a {
     padding: 0;
   }
   .links a:hover {
+    padding: 0;
+    background: transparent;
+  }
+  .links a:visited {
     padding: 0;
     background: transparent;
   }
